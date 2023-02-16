@@ -1,4 +1,4 @@
-#include <stdioh.h
+#include <stdioh.h>
 
 /**
  * main -prints "and that piece of art is useful" - Dora Korpar, 2015-10-19",
