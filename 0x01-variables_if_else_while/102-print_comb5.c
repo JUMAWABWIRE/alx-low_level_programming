@@ -8,7 +8,6 @@
  * Return: Always 0 (Success)
  */
 
-
 int main(void)
 {int first, second;
 for (first = 0; first < 100; first++)
