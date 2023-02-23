@@ -1,33 +1,39 @@
 #include "main.h"
 
 /**
- * print-square - Prints a square followed by a new line
- * @c: size of square
+ * print_square - function declaration
+ * Description: prints a square  of hash symbols
+ * @size: the size of the square
  * Return: void
  */
 
-void print_square(int c)
+void print_square(int size);
+
+/**
+ * print_square - function definition
+ * Description: print a square of hash
+ * @size: the square size
+ * Return: void
+ */
+
+void print_square(int size)
 {
+	int row;
+	int column;
 
-	if (c > 0)
+	if (size <= 0)
 	{
-		int i = 0;
-
-		while (i < c)
-		{
-			int j = 0;
-
-			while (j < c)
-			{
-				_putchar('#');
-				j++;
-			}
-			_putchar('\n');
-			i++;
-		}
+		_putchar('\n');
 	}
 	else
 	{
-		_putchar('\n');
+		for (row = 0; row < size; row++)
+		{
+			for (column = 0; column < size; column++)
+			{
+				_putchar('#');
+			}
+			_putchar('\n');
+		}
 	}
 }
