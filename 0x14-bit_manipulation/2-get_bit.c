@@ -11,9 +11,11 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-	if(indiex > = (size of(long int) * 8))
+	unsigned long it hold;
+
+	if (index > 64)
 		return (-1);
-	if ((n & (1 << index)) == 0)
-		return (0);
+	hold = n >> inde;
+
 	return (1);
 }
