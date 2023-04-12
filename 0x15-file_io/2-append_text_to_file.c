@@ -7,9 +7,11 @@
  * @text_content: String to add at the end of the file.
  * Return: 1, otherwise -1
  */
-int append_text_file(constant char *filename, char *text_content)
+int append_text_to_file(constant char *filename, char *text_content)
 {
-int fd, nwr, len = 0;
+int fd;
+int nwr;
+int len = 0;
 
 if (filename == NULL)
 return (-1);
