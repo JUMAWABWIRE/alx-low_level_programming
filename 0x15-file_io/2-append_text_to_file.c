@@ -16,9 +16,6 @@ int wr;
 if (filename == NULL)
 return (-1);
 
-if (fd == -1)
-return (-1);
-
 if (text_content)
 {
 for (nrd = 0; text_content[nrd]; nrd++)
@@ -29,6 +26,9 @@ wr = write(fd, text_content, nrd);
 if (filename == NULL)
 	return (-1);
 fd = open(filename, O_WRONLY | O_APPEND);
+if (fd == -1)
+	return (-1);
+wr = write(fd, text_content, nrd);
 if (wr == -1)
 return (-1);
 }
